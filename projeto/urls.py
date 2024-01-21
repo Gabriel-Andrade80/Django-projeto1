@@ -15,7 +15,33 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+# HTTP REQUEST <- HTTP RESPONSE
+
+
+# HTTP REQUEST
+def home(request):
+    """funçao para pagina contato"""
+
+    return HttpResponse('home')
+
+
+def contato(request):
+    """funçao para pagina contato"""
+
+    return HttpResponse('contato')
+
+
+def sobre(request):
+    """funçao para pagina contato"""
+
+    return HttpResponse('sobre')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home),  # Home
+    path('sobre/', sobre),  # /sobre/
+    path('contato/', contato),  # /contato/
 ]
