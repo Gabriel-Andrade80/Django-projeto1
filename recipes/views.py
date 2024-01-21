@@ -16,7 +16,7 @@ def home(request):
 def contato(request):
     """funçao para pagina contato"""
 
-    return render(request,'temp/temp.html')
+    return render(request,'recipes/contato.html')
 
 
 def sobre(request):
