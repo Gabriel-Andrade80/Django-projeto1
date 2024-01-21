@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render #ler e renderizar arquivo
 from django.http import HttpResponse
 
 
@@ -8,13 +8,15 @@ from django.http import HttpResponse
 def home(request):
     """funçao para pagina home"""
 
-    return HttpResponse('HOME 1')
+    return render(request, 'recipes/home.html',context={
+        'name': 'Gabriel Andrade',
+    } )
 
 
 def contato(request):
     """funçao para pagina contato"""
 
-    return HttpResponse('contato 2')
+    return render(request,'temp/temp.html')
 
 
 def sobre(request):
