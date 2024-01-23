@@ -8,7 +8,7 @@ from django.shortcuts import render #ler e renderizar arquivo
 def home(request):
     """funçao para pagina home"""
 
-    return render(request, 'recipes/home.html',context={
+    return render(request, 'recipes/pages/home.html',context={
         'name': 'Gabriel Andrade',
     } )
 
