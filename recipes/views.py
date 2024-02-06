@@ -16,7 +16,6 @@ def home(request):
 def recipe(request,id):
     """funçao para pagina recipe"""
 
-    return render(request, 'recipes/pages/home.html',context={
+    return render(request, 'recipes/pages/recipe-view.html',context={
         'name': 'Gabriel Andrade',
-    } )
-
+    })
