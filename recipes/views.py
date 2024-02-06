@@ -12,3 +12,11 @@ def home(request):
         'name': 'Gabriel Andrade',
     } )
 
+
+def recipe(request,id):
+    """funçao para pagina recipe"""
+
+    return render(request, 'recipes/pages/home.html',context={
+        'name': 'Gabriel Andrade',
+    } )
+
